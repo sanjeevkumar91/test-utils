@@ -1,0 +1,46 @@
+{
+  "name": "test-utils",
+  "version": "1.0.0",
+  "description": "test utils",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest --verbose",
+    "test": "node src/runTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevkumar91/test-utils.git"
+  },
+  "keywords": [
+    "test",
+    "utils"
+  ],
+  "author": "Sanjeev Kumar. A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjeevkumar91/test-utils/issues"
+  },
+  "homepage": "https://github.com/sanjeevkumar91/test-utils#readme",
+  "devDependencies": {
+    "chalk": "^4.1.1",
+    "csv-writer": "^1.6.0",
+    "jest": "^27.0.5",
+    "jest-editor-support": "^29.0.0",
+    "recursive-path-finder-regexp": "^0.3.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](node_modules)[/\\\\]"
+    ],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "testRegex": "(test|spec)\\.js$"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
