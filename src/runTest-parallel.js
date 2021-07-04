@@ -32,7 +32,9 @@ function getAllMatchingIndices(str, regex = /it\(/gi) {
 }
 
 function convertByteToString(data) {
-  return String.fromCharCode(...data);
+  return new Uint8Array(data).reduce(function (acc, byte) {
+    return acc + String.fromCharCode(byte);
+  }, '');
 };
 
 function getLineNumber(str, index) {
