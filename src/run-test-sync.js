@@ -10,9 +10,19 @@ const {
 } = require('jest-editor-support');
 const path = require('path');
 
-const testPaths = find(/src.*\.test.js/, {
+const extractPath = (fpath) => {
+  if (fpath.includes(__dirname) && __dirname) {
+    const dirPathSplit = __dirname.split('/');
+    return dirPathSplit[dirPathSplit.length - 1] + fpath.replace(__dirname, '');
+  }
+  return path
+}
+const testFilePath = process.env.TEST_PATH ? extractPath(process.env.TEST_PATH) : "src.*\.test.js";
+const totalTestFilePaths = find(new RegExp(testFilePath), {
   exclude: [/__snapshots__/]
 });
+
+console.log('totalTestFilePaths:', totalTestFilePaths);
 
 const logger = {
   log: (str) => console.log(chalk.green.bold(str)),
@@ -157,7 +167,7 @@ async function runTests() {
   const failedTests = [];
   const passedTests = [];
   const testsToExecute = [];
-  for (const filePath of testPaths) {
+  for (const filePath of totalTestFilePaths) {
     const tests = await extractTests(filePath);
     testsToExecute.push(...tests);
   };
