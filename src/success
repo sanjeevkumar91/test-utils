@@ -1,12 +1,2 @@
 1 | src/example-test/calc.test.js | Calc should add two numbers 
 2 | src/example-test/calc.test.js | Calc should subtract two numbers 
-3 | src/example-test/calc1.test.js | Calc should add two numbers 
-4 | src/example-test/calc1.test.js | Calc should subtract two numbers 
-5 | src/example-test/calc2.test.js | Calc should add two numbers 
-6 | src/example-test/calc2.test.js | Calc should subtract two numbers 
-7 | src/example-test/calc3.test.js | Calc should add two numbers 
-8 | src/example-test/calc3.test.js | Calc should subtract two numbers 
-9 | src/example-test/calc4.test.js | Calc should add two numbers 
-10 | src/example-test/calc4.test.js | Calc should subtract two numbers 
-11 | src/example-test/calc5.test.js | Calc should add two numbers 
-12 | src/example-test/calc5.test.js | Calc should subtract two numbers 

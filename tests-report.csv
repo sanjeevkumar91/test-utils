@@ -1,19 +1,4 @@
 File,Test Name,Status
 src/example-test/calc.test.js,Calc should multiply two numbers,FAIL
-src/example-test/calc1.test.js,Calc should multiply two numbers,FAIL
-src/example-test/calc2.test.js,Calc should multiply two numbers,FAIL
-src/example-test/calc3.test.js,Calc should multiply two numbers,FAIL
-src/example-test/calc4.test.js,Calc should multiply two numbers,FAIL
-src/example-test/calc5.test.js,Calc should multiply two numbers,FAIL
 src/example-test/calc.test.js,Calc should add two numbers,PASS
 src/example-test/calc.test.js,Calc should subtract two numbers,PASS
-src/example-test/calc1.test.js,Calc should add two numbers,PASS
-src/example-test/calc1.test.js,Calc should subtract two numbers,PASS
-src/example-test/calc2.test.js,Calc should add two numbers,PASS
-src/example-test/calc2.test.js,Calc should subtract two numbers,PASS
-src/example-test/calc3.test.js,Calc should add two numbers,PASS
-src/example-test/calc3.test.js,Calc should subtract two numbers,PASS
-src/example-test/calc4.test.js,Calc should add two numbers,PASS
-src/example-test/calc4.test.js,Calc should subtract two numbers,PASS
-src/example-test/calc5.test.js,Calc should add two numbers,PASS
-src/example-test/calc5.test.js,Calc should subtract two numbers,PASS

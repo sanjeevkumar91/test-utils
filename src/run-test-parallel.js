@@ -13,13 +13,13 @@ const path = require('path');
 const extractPath = (fpath) => {
   if (fpath.includes(__dirname) && __dirname) {
     const dirPathSplit = __dirname.split('/');
-    return dirPathSplit[dirPathSplit.length - 1] + fpath.replace(__dirname, '');
+    return dirPathSplit[dirPathSplit.length - 1] + fpath.toString().replace(__dirname, '');
   }
-  return path
-}
+  return fpath.toString()
+};
 const testFilePath = process.env.TEST_PATH ? extractPath(process.env.TEST_PATH) : "src.*\.test.js";
 const totalTestFilePaths = find(new RegExp(testFilePath), {
-  exclude: [/__snapshots__/]
+  exclude: [/__snapshots__/, /.git/, /node_modules/]
 });
 
 console.log('totalTestFilePaths:', totalTestFilePaths);
