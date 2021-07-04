@@ -12,8 +12,7 @@ const path = require('path');
 
 const extractPath = (fpath) => {
   if (fpath.includes(__dirname) && __dirname) {
-    const dirPathSplit = __dirname.split('/');
-    return dirPathSplit[dirPathSplit.length - 1] + fpath.toString().replace(__dirname, '');
+    return fpath.toString().replace(__dirname, '');
   }
   return fpath.toString()
 };

@@ -6,8 +6,8 @@
   "scripts": {
     "jest": "jest --verbose",
     "test": "node src/index.js",
-    "test-sync": "node src/run-test-sync.js",
-    "test-parallel": "node src/run-test-parallel.js"
+    "test-sync": "node run-test-sync.js",
+    "test-parallel": "node run-test-parallel.js"
   },
   "repository": {
     "type": "git",
