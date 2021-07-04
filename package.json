@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "jest": "jest --verbose",
-    "test": "node src/runTest.js"
+    "test": "node src/index.js",
+    "test-sync": "node src/runTest-sync.js",
+    "test-parallel": "node src/runTest-parallel.js"
   },
   "repository": {
     "type": "git",
