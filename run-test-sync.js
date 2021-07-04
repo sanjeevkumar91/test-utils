@@ -1,3 +1,4 @@
+/* eslint-disable */
 const find = require('recursive-path-finder-regexp');
 const createObjectCsvWriter = require('csv-writer').createObjectCsvWriter;
 const {
