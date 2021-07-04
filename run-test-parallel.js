@@ -13,7 +13,7 @@ const path = require('path');
 
 const extractPath = (fpath) => {
   if (fpath.includes(__dirname) && __dirname) {
-    return fpath.toString().replace(__dirname, '');
+    return fpath.toString().replace(__dirname, '').replace('/', '');
   }
   return fpath.toString()
 };
