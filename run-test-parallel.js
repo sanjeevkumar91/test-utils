@@ -178,7 +178,7 @@ async function runTestPromise({
 }) {
   try {
     logger.info('running test: ' + testName);
-    await execPromise("node 'node_modules/jest/bin/jest.js' " + filePath + " -t " + '"' + testName + '"');
+    await execPromise("node 'node_modules/jest/bin/jest.js' " + filePath + " -t " + '"' + testName + '" --testTimeout 90000 --forceExit')
     return {
       filePath,
       testName,

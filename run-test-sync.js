@@ -177,7 +177,7 @@ async function runTests() {
   }, index) {
     try {
       logger.info('running test: ' + (index + 1) + ' ' + testName);
-      execSync("node 'node_modules/jest/bin/jest.js' " + filePath + " -t " + '"' + testName + '"');
+      execSync("node 'node_modules/jest/bin/jest.js' " + filePath + " -t " + '"' + testName + '" --testTimeout 90000 --forceExit');
       processSuccessLog(passedTests.length + 1, filePath, testName);
       passedTests.push({
         filePath,
