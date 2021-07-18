@@ -258,7 +258,7 @@ async function runTestPromise({ filePath, testName }) {
 }
 
 /**
- * main function to the run the test execution
+ * runs the tests and logs the results
  * @returns void
  */
 async function runTests() {
